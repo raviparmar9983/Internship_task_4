@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#root {
+    height: 100vh;
+}
+#main{
+    width: 100vw;
+}
+#slidbar {
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+}
+
+#topbar {
+    background: #FFFFFF;
+}
+#content{
+    padding-left: 0px!important;
+}
+#main-content {
+    /* height: 100vh; */
+    background-color:
+    rgba(248, 249, 250, 1);
+}
+
+#todays_sale {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #F8F9FA;
+    box-shadow: 0px 4px 20px 0px #EEEEEE80;
+    height: fit-content;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(5, 0, 78, 1);
+
+}
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgba(195, 211, 226, 1)
+}
+
+.desci {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(115, 119, 145, 1);
+
+}
+
+.today_sale_card {
+    width: 180px;
+    height: 184px;
+    border-radius: 16px;
+    background: rgba(255, 226, 229, 1);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.today_sale_card_price{
+    font-size: 24px;
+    line-height:32px ;
+    color: rgba(21, 29, 72, 1);
+
+}
+.today_sale_card_details{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(66, 81, 102, 1);
+
+}
+.card_yesterday{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(64, 121, 237, 1);
+
+}
+#today-sale-card2 img{
+    background-color: rgba(255, 148, 122, 1);
+    border-radius: 50%;
+}
+#today-sale-card2{
+    background-color: rgba(255, 244, 222, 1);
+}
+#today-sale-card3{
+    background-color: rgba(220, 252, 231, 1);
+}
+#today-sale-card4{
+    background-color: rgba(243, 232, 255, 1);
+
+}
+#visitor ,#visitor-list,#top-product,#main-product,#sales-contry,#volume{
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(248, 249, 250, 1);
+    border-radius: 16px;
+}
+/* @media screen and (max-width:575px) {
+    #slidbar{
+        display: none;
+    }
+    #content{
+        width: 100%;
+    }
+} */
