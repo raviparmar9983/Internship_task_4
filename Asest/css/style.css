@@ -6,9 +6,11 @@
 #root {
     height: 100vh;
 }
-#main{
+
+#main {
     width: 100vw;
 }
+
 #slidbar {
     height: 100vh;
     background: #FFFFFF;
@@ -18,13 +20,15 @@
 #topbar {
     background: #FFFFFF;
 }
-#content{
-    padding-left: 0px!important;
+
+#content {
+    padding-left: 0px !important;
 }
+
 #main-content {
     /* height: 100vh; */
     background-color:
-    rgba(248, 249, 250, 1);
+        rgba(248, 249, 250, 1);
 }
 
 #todays_sale {
@@ -72,43 +76,57 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.today_sale_card_price{
+
+.today_sale_card_price {
     font-size: 24px;
-    line-height:32px ;
+    line-height: 32px;
     color: rgba(21, 29, 72, 1);
 
 }
-.today_sale_card_details{
+
+.today_sale_card_details {
     font-size: 16px;
     line-height: 24px;
     color: rgba(66, 81, 102, 1);
 
 }
-.card_yesterday{
+
+.card_yesterday {
     font-size: 16px;
     line-height: 20px;
     color: rgba(64, 121, 237, 1);
 
 }
-#today-sale-card2 img{
+
+#today-sale-card2 img {
     background-color: rgba(255, 148, 122, 1);
     border-radius: 50%;
 }
-#today-sale-card2{
+
+#today-sale-card2 {
     background-color: rgba(255, 244, 222, 1);
 }
-#today-sale-card3{
+
+#today-sale-card3 {
     background-color: rgba(220, 252, 231, 1);
 }
-#today-sale-card4{
+
+#today-sale-card4 {
     background-color: rgba(243, 232, 255, 1);
 
 }
-#visitor ,#visitor-list,#top-product,#main-product,#sales-contry,#volume{
+
+#visitor,
+#visitor-list,
+#top-product,
+#main-product,
+#sales-contry,
+#volume {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(248, 249, 250, 1);
     border-radius: 16px;
 }
+
 /* @media screen and (max-width:575px) {
     #slidbar{
         display: none;
@@ -117,3 +135,108 @@
         width: 100%;
     }
 } */
+thead {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: start;
+    color: #96A5B8;
+}
+
+tbody {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: start;
+    color: #444A6D;
+
+}
+
+td button {
+    width: 50px;
+    height: 24px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#btn2 {
+    color: rgba(0, 229, 143, 1);
+    border-color: rgba(0, 229, 143, 1);
+
+    background: rgba(240, 253, 244, 1);
+}
+
+#btn1 {
+    color: rgba(0, 149, 255, 1);
+    border-color: rgba(0, 149, 255, 1);
+    background-color: lue/50 rgba(240, 249, 255, 1);
+}
+
+#btn3 {
+    color:
+        rgba(136, 77, 255, 1);
+    border-color: rgba(136, 77, 255, 1);
+    background-color: rgba(251, 241, 255, 1);
+}
+
+#btn4 {
+    color:
+        rgba(255, 137, 0, 1);
+    border-color:
+        rgba(255, 137, 0, 1);
+    background-color:
+        rgba(254, 246, 230, 1);
+}
+
+#measur1 ,#measur2,#measur3,#measur4 {
+    width: 180px ;
+    height: 4px ;
+    border-radius: 8px;
+}
+#measur1{
+    background: rgba(205, 231, 255, 1);
+
+}
+
+#measur2{
+    background: rgba(140, 250, 199, 1);
+
+}
+#measur3{
+    background: rgba(197, 168, 255, 1);
+
+}
+#measur4{
+    background: rgba(255, 213, 164, 1);
+
+}
+#show-measur1{
+    width: 90%;
+    height: 100%;background: rgba(0, 149, 255, 1);
+
+}
+#show-measur2{
+    width: 85%;
+    height: 100%;background: rgba(0, 224, 150, 1);
+
+
+}
+#show-measur3{
+    width: 80%;
+    height: 100%;background: rgba(136, 77, 255, 1);
+
+
+}
+#show-measur4{
+    width: 50%;
+    height: 100%;background: rgba(255, 143, 13, 1);
+
+
+}
