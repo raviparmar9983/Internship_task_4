@@ -10,10 +10,38 @@
 </head>
 
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="row flex-nowrap" id="root">
-            <div class="col-md-1 col-lg-2 d-none d-md-block" id="slidbar"></div>
-            <div class="col-md-11 gx-3 col-lg-10 " id="content">
+            <div class="slidbar-toggle ps-0 pe-0 container-fluid d-flex flex-column justify-content-evenly" id="slidbar">
+                <section class="d-flex w-80 justify-content-around">
+                    <div class="img-container d-flex justify-content-center align-items-center"><img
+                            src="Asest/image/dummy.svg" alt="" class="img-fluid"></div>
+                    <span class="log-name">Dabang</span>
+                </section>
+                <ul class="d-flex flex-column ps-0 h-50 justify-content-between align-items-start">
+                    <li class=" cl"><a href="#" class="d-flex justify-content-between"> <img src="Asest/image/dashboard.svg " alt=""><span
+                        class="sidebar-items">DashBoard</span></a>
+                       
+                    </li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/lederboard.svg"
+                                alt=""><span class="sidebar-items">Leaderboard</span></a></li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/Icon/Outline/Icon.svg"
+                                alt=""><span class="sidebar-items">order</span></a></li>
+                    <li class="d-flex justify-content-between"><a href=""><img
+                                src="Asest/image/mdi_shopping-outline.svg" alt=""><span
+                                class="sidebar-items">Products<span></a></li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/Interface/Vector.svg"
+                                alt=""><span class="sidebar-items">Sales Report</span></a>
+                    </li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/msg.svg" alt=""><span
+                                class="sidebar-items">Messages</span></a></li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/setting.svg"
+                                alt=""><span class="sidebar-items">Setting</span></a></li>
+                    <li class="d-flex justify-content-between"><a href="#"><img src="Asest/image/signout.svg"
+                                alt=""><span class="sidebar-items">Sign Out</span></a></li>
+                </ul>
+            </div>
+            <div class="content-toggled" id="content">
                 <div class="row ms-1">
                     <div class="navbar navbar-light " id="topbar">
                         <button class="navbar-toggler  border border-white" type="button" data-bs-toggle="collapse"
@@ -135,25 +163,41 @@
                                     <tr>
                                         <th>01</th>
                                         <td>Home Decor Range</td>
-                                        <td ><div id="measur1"><div id="show-measur1"></div></div></td>
+                                        <td>
+                                            <div id="measur1">
+                                                <div id="show-measur1"></div>
+                                            </div>
+                                        </td>
                                         <td><button id="btn1">45%</button></td>
                                     </tr>
                                     <tr>
                                         <th>02</th>
                                         <td>Disney Princess Pink Bag 18'</td>
-                                        <td ><div id="measur2"><div id="show-measur2"></div></div></td>
+                                        <td>
+                                            <div id="measur2">
+                                                <div id="show-measur2"></div>
+                                            </div>
+                                        </td>
                                         <td><button id="btn2">29%</button></td>
                                     </tr>
                                     <tr>
                                         <th>03</th>
                                         <td>Bathroom Essentials</td>
-                                        <td><div  id="measur3"><div id="show-measur3"></div></div></td>
+                                        <td>
+                                            <div id="measur3">
+                                                <div id="show-measur3"></div>
+                                            </div>
+                                        </td>
                                         <td><button id="btn3">18%</button></td>
                                     </tr>
                                     <tr>
                                         <th>04</th>
                                         <td>Apple Smartwatches</td>
-                                        <td ><div id="measur4"><div id="show-measur4"></div></div></td>
+                                        <td>
+                                            <div id="measur4">
+                                                <div id="show-measur4"></div>
+                                            </div>
+                                        </td>
                                         <td><button id="btn4">25%</button></td>
                                     </tr>
                                 </tbody>
@@ -166,7 +210,7 @@
                         <button class="btn main-product-btn" id="main-product-btn2">Product-2</button>
                         <hr>
                     </div>
-                   
+
                     <div class="col-lg-4 p-3" id="sales-contry">
 
                         <span class="card-title">Sales Mapping by Country</span>
@@ -175,16 +219,30 @@
                     <div class="col-lg-3 p-3" id="volume">
                         <span class="card-title">Volume vs Service Level</span>
                         <div class="d-flex justify-content-between overflow-scroll flex-nowrap align-items-end">
-                            <div class="volum-meter" id="volum-meter1"><div class="service-meter" id="service-meter1"></div></div>
-                            <div class="volum-meter" id="volum-meter2"><div class="service-meter" id="service-meter2"></div></div>
-                            <div class="volum-meter" id="volum-meter3"><div class="service-meter" id="service-meter3"></div></div>
-                            <div class="volum-meter" id="volum-meter4"><div class="service-meter" id="service-meter4"></div></div>
-                            <div class="volum-meter" id="volum-meter5"><div class="service-meter" id="service-meter5"></div></div>
-                            <div class="volum-meter" id="volum-meter6"><div class="service-meter" id="service-meter6"></div></div>
+                            <div class="volum-meter" id="volum-meter1">
+                                <div class="service-meter" id="service-meter1"></div>
+                            </div>
+                            <div class="volum-meter" id="volum-meter2">
+                                <div class="service-meter" id="service-meter2"></div>
+                            </div>
+                            <div class="volum-meter" id="volum-meter3">
+                                <div class="service-meter" id="service-meter3"></div>
+                            </div>
+                            <div class="volum-meter" id="volum-meter4">
+                                <div class="service-meter" id="service-meter4"></div>
+                            </div>
+                            <div class="volum-meter" id="volum-meter5">
+                                <div class="service-meter" id="service-meter5"></div>
+                            </div>
+                            <div class="volum-meter" id="volum-meter6">
+                                <div class="service-meter" id="service-meter6"></div>
+                            </div>
                         </div>
                         <hr>
                         <section class="d-flex justify-content-around">
-                            <span><div></div>Volume</span>
+                            <span>
+                                <div></div>Volume
+                            </span>
                             <div></div><span>Service</span>
                         </section>
                     </div>
