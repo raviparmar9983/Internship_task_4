@@ -1,10 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Poppins", sans-serif;
 }
 
 .sidebar {
-    width: 6.5rem !important;
+    min-width: 6.5rem !important;
 }
 
 #sidebar {
@@ -36,7 +37,7 @@
     align-items: center;
     width: 80%;
     height: 50px;
-    border-radius: 16px;
+    border-radius: 8px;
     padding-top: 5px;
 
 }
@@ -87,7 +88,7 @@
         align-items: center;
         width: 100%;
         height: max-content;
-        border-radius: 2px;
+        border-radius: 0px;
         padding-top: 0px;
 
     }
@@ -133,9 +134,8 @@
     .sidebar-toggled .nav-item .navbar-brand .log-name {
         display: none;
     }
-
-
 }
+
 .sidebar-toggled section {
     display: none;
 }
@@ -176,11 +176,6 @@
     background-color: #5D5FEF;
 }
 
-.sidebar-items {
-    color: #737791;
-    font-size: 18px;
-    margin-left: 15px;
-}
 
 .img-container {
     height: 56px;
@@ -545,4 +540,17 @@ td button {
     width: 10px;
     background-color: (0, 149, 255, 1);
     border-radius: 50%;
+}
+@media screen and (min-width:1450px) {
+    .card-title{
+        font-size: 25px;
+    }
+    .desci{
+        font-size: 20px;
+    }
+    thead,tbody, td button{
+        font-size: 20px;
+    }
+
+
 }
