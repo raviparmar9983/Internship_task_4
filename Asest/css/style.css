@@ -4,12 +4,19 @@
     font-family: "Poppins", sans-serif;
 }
 
+#body {
+    width: 100% !important;
+}
+
 .sidebar {
     min-width: 6.5rem !important;
 }
 
 #sidebar {
     height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .sidebar-toggled {
@@ -31,6 +38,7 @@
     align-items: center;
     font-size: 10px;
 }
+
 .nav-item {
     display: flex;
     justify-content: center;
@@ -45,12 +53,21 @@
 .sidebar-toggled .nav-item .navbar-brand .log-name {
     display: none;
 }
+
 .navbar-brand img {
     height: 56px;
     width: 56px;
     padding: 15px;
     border-radius: 8px;
     background-color: #5D5FEF;
+}
+
+.sidebar-toggled .wrapper #content {
+    margin-left: 0rem !important;
+}
+
+.sidebar .wrapper #content {
+    margin-left: 6.5rem !important;
 }
 
 @media screen and (max-width:767px) {
@@ -99,13 +116,16 @@
         border-radius: 2px;
         background-color: #5D5FEF;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         margin: 0px;
     }
+
     .sidebar-toggled section {
         display: none;
     }
-    .sidebar section{
+
+    .sidebar section {
         display: none;
     }
 }
@@ -118,6 +138,14 @@
 
     .sidebar-toggled {
         width: 6.5rem !important;
+    }
+
+    .sidebar .wrapper #content {
+        margin-left: 14rem !important;
+    }
+
+    .sidebar-toggled .wrapper #content {
+        margin-left: 6.5rem !important;
     }
 
     .sidebar-toggled .nav-item a,
@@ -143,14 +171,22 @@
 .nav-item a {
     text-decoration: none;
     color: #737791;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
-.nav-item a:hover ,.cl{
+.nav-item a:hover,
+.cl {
     color: white;
 }
 
+#opned li a:hover {
+    background-color: #5D5FEF;
+    color: white;
+}
+a:active{
+    color: white;
+}
 .img-container {
     height: 30px;
     width: 30px;
@@ -161,8 +197,17 @@
     background-color: #F9FAFB;
     border-radius: 8px;
     padding: 2px;
+}.accordion-button::after,.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-
+.dropdown-toggle::after{
+    content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-repeat: no-repeat;
+    width: 20px;
+    border: 0!important;
+    margin-left: 20px;
+    margin-top: 8px;
+}
 .dot {
     height: 7px;
     width: 7px;
@@ -172,7 +217,8 @@
 }
 
 
-.nav-item:hover ,.cl{
+.nav-item:hover,
+.cl {
     background-color: #5D5FEF;
 }
 
@@ -191,6 +237,10 @@
 
 #topbar {
     background: #FFFFFF;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
 }
 
 #content {
@@ -220,6 +270,16 @@ ul {
 
 a:link {
     text-decoration: none;
+}
+
+button:hover {
+    background-color: #5D5FEF !important;
+    color: white !important;
+}
+
+#main-product-btn1 {
+    background-color: #5D5FEF;
+    color: white;
 }
 
 #todays_sale {
@@ -257,6 +317,10 @@ a:link {
 
 }
 
+#logo:hover {
+    background-color: transparent;
+}
+
 #product2 {
     display: none;
 }
@@ -271,7 +335,9 @@ a:link {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
+.border-5{
+    border-width: 0.5rem!important;
+}
 .today_sale_card_price {
     font-size: 24px;
     line-height: 32px;
@@ -321,15 +387,6 @@ a:link {
     border: 1px solid rgba(248, 249, 250, 1);
     border-radius: 16px;
 }
-
-/* @media screen and (max-width:575px) {
-    #slidbar{
-        display: none;
-    }
-    #content{
-        width: 100%;
-    }
-} */
 thead {
     font-family: Open Sans;
     font-size: 13px;
@@ -453,6 +510,7 @@ td button {
     background-color: transparent;
     border-radius: 0px;
     margin: 0;
+    padding: 10px;
 
 }
 
@@ -524,33 +582,42 @@ td button {
     height: 50%;
 }
 
-#volume section span {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0px;
-    color:
-        rgba(150, 165, 184, 1);
-
-
+#volume,
+#sales-contry,
+#main-product,
+#top-product,
+#visitor-list,
+#visitor,
+#todays_sale {
+    border-color: rgba(248, 249, 250, 1) !important;
 }
 
-#volume section span div {
-    height: 10px;
-    width: 10px;
-    background-color: (0, 149, 255, 1);
-    border-radius: 50%;
+@media screen and (max-width:1270px) {
+
+    #adver {
+        font-size: smaller;
+    }
 }
+
 @media screen and (min-width:1450px) {
-    .card-title{
-        font-size: 25px;
-    }
-    .desci{
-        font-size: 20px;
-    }
-    thead,tbody, td button{
-        font-size: 20px;
+    .card-title {
+        font-size: 22px;
     }
 
+    .desci {
+        font-size: 18px;
+    }
 
+    thead,
+    tbody,
+    td button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:491px) {
+    #opned {
+        left: 1px !important;
+        right: 0px !important;
+    }
 }
